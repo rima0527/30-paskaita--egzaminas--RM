@@ -20,12 +20,12 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-const getUserAverageAge = (masyvas) => {
-  const {length} = masyvas;
-  return masyvas.reduce ((acc,val)=> {
-    return acc +(val.age/length);
+function getUserAverageAge(masyvas) {
+  const { length } = masyvas;
+  return masyvas.reduce((acc, val) => {
+    return acc + (val.age / length);
   }, 0);
-  };
+}
 
   console.log(getUserAverageAge(users));
 
