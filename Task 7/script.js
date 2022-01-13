@@ -5,10 +5,11 @@ Parašykite funkciją showObjectKeys, kuri kaip argumentą priims objectą
 ir grąžins visus jo "key" masyve.
 -------------------------------------------------------------------------- */
 const audi = {
-  make: 'audi',
+  marke: 'audi',
   model: 'A6',
   year: 2005,
   color: 'white',
 };
 
-const showObjectKeys
+showObjectKeys = Object.keys(audi);
+console.log(showObjectKeys);
