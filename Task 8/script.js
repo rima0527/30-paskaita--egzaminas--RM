@@ -5,3 +5,9 @@ subtraction() - priima du skaičius ir grąžina jų skirtumą.
 multiplication() - priima du skaičius ir grąžina jų daugybos rezultatą;
 division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
+
+let calculator = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );

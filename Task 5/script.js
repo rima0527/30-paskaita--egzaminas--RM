@@ -19,3 +19,27 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+
+var filterDogOwers =  users.filter(function(user) {
+  return user.hasDog == true;
+});
+
+console.log(filterDogOwers);
+/* išspausdina  masyvo elementus
+for(let i = 0; i < filterDogOwers.length; i++){
+  console.log(filterDogOwers[i]);
+}
+*/
+
+
+var filterAdults =  users.filter(function(adults) {
+  return adults.age >= 18;
+});
+
+console.log(filterAdults);
+/* išspausdina masyvo elementus 
+for(let i = 0; i < filterAdults.length; i++){
+  console.log(filterAdults[i]);
+}
+*/
