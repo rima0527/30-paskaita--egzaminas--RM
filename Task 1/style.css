@@ -53,6 +53,8 @@ form {
 }
 
 #output {
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
   background-color: #f7f7f74f;
   font-weight: regular;
