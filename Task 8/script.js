@@ -6,8 +6,36 @@ multiplication() - priima du skaičius ir grąžina jų daugybos rezultatą;
 division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
-let calculator = new Calculator();
-calculator.read();
+console.log ('Calculator');
 
-alert( "Sum=" + calculator.sum() );
-alert( "Mul=" + calculator.mul() );
+class Calculator {
+    constructor(num1, num2, sum, substraction, multiplication, division){
+this.num1= document.getElementById("firstNumber").value;
+this.num2= document.getElementById("secondNumber").value;
+
+function sum()
+{
+        document.getElementById("result").innerHTML = num1 + num2;
+}
+
+function substraction()
+{
+        document.getElementById("result1").innerHTML = num1 - num2;
+}
+
+function multiplication()
+{
+        document.getElementById("result2").innerHTML = num1 * num2;
+}
+
+function division() 
+{ 
+       document.getElementById("result3").innerHTML = num1 / num2;
+}
+}
+
+alert( "Sum=" + calculator.sum());
+alert( "Sub=" + calculator.substraction());
+alert( "Mul=" + calculator.multiplication());
+alert( "Div=" + calculator.division());
+

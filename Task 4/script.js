@@ -10,3 +10,5 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+document.getElementById("demo").innerHTML = 5 + 6;

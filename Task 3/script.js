@@ -11,3 +11,7 @@ Pastaba: Informacija apie user'į (jo kortelė) bei turi turėti bent minimalų 
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'https://api.github.com/users';
+
+var filterUsers =  users.filter(function(user) {
+    return user.login + user.avatar_url;
+  });

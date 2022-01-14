@@ -30,5 +30,5 @@ function getUserAverageAge(masyvas) {
   console.log(getUserAverageAge(users));
 
 
-getUsersName = users.map(person=>person.name);
+var getUsersName = users.map(person=>person.name);
 console.log (getUsersName);

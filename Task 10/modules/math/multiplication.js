@@ -1,3 +1,5 @@
-function multiplication(a, b) {
-  return a * b;
+function multiplication(x, y) {
+  return x * y;
 }
+
+export { multiplication };
