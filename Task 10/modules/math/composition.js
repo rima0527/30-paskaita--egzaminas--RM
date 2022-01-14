@@ -1,6 +1,3 @@
-function composition(x, y) {
+export default function composition(x, y) {
   return x + y;
 }
-
-
-export { composition };

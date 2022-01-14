@@ -1,5 +1,5 @@
-function division(x, y) {
+export default function division(x, y) {
   return x / y;
 }
 
-export { division };
+

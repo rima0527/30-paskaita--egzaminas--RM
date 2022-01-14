@@ -1,16 +1,11 @@
 /* ------------------------------ TASK 9 ---------------------------------------------------
 Sutvarkykite užduoties "Task 10" esančius failus taip, kad veiktų žemiau pateiktos funcijos
 -------------------------------------------------------------------------------------------- */
-import composition() from './math/composition.js';
-import division()  './math/division.js';
-import substraction() from './math/substraction.js';
-import multiplication() from './math/multiplication.js';
-import {one, two, three, four} from './numbers/numbers.js';
-
-/*import one from './numbers/numbers.js';
-import two from './numbers/numbers.js';
-import three from './numbers/numbers.js';
-import four from './numbers/numbers.js';*/
+import composition from "./modules/math/composition";
+import division from "./modules/math/division";
+import substraction from "./modules/math/subtraction";
+import multiplication from "./modules/math/multiplication";
+import { one, two, three, four, five } from "./modules/numbers/numbers";
 
 
 let a = composition(one, four);
