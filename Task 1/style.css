@@ -52,6 +52,15 @@ form {
   color: #fff;
 }
 
+#output {
+  width: 80%;
+  background-color: #f7f7f74f;
+  font-weight: regular;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1.1 em;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
