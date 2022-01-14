@@ -27,3 +27,17 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+}
+h2 {
+  padding-bottom: 0,5 rem;
+}
+.brand-card {
+  background-color:chartreuse ;
+  width: 20%;
+  padding: 2rem;
+  margin: 2rem;
+}

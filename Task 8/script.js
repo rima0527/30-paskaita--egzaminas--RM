@@ -6,36 +6,29 @@ multiplication() - priima du skaičius ir grąžina jų daugybos rezultatą;
 division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
-console.log ('Calculator');
-
-class Calculator {
-    constructor(num1, num2, sum, substraction, multiplication, division){
-this.num1= document.getElementById("firstNumber").value;
-this.num2= document.getElementById("secondNumber").value;
-
-function sum()
-{
-        document.getElementById("result").innerHTML = num1 + num2;
-}
-
-function substraction()
-{
-        document.getElementById("result1").innerHTML = num1 - num2;
-}
-
-function multiplication()
-{
-        document.getElementById("result2").innerHTML = num1 * num2;
-}
-
-function division() 
-{ 
-       document.getElementById("result3").innerHTML = num1 / num2;
-}
-}
-
-alert( "Sum=" + calculator.sum());
-alert( "Sub=" + calculator.substraction());
-alert( "Mul=" + calculator.multiplication());
-alert( "Div=" + calculator.division());
-
+function Calculator(num1, num2) {
+    this.num1 = num1;
+    this.num2 = num2;
+    
+    this.sum = function () {
+      return num1 + num2;
+    }
+    this.substraction = function () {
+      return num1 - num2;
+    }
+    this.multiplication = function () {
+      return num1 * num2;
+    }
+    this.division = function () {
+      return num1 / num2;
+    }
+  }
+  
+  
+  let Calculator1 = new Calculator(150, 10);
+  
+  console.log ('skaiciai ' + Calculator1.num1 + ' ' +Calculator1.num2);
+  console.log('suma ' + Calculator1.sum());
+  console.log('atimtis '+ Calculator1.substraction());
+  console.log('daugyba '+ Calculator1.multiplication());
+  console.log('dalyba ' + Calculator1.division());

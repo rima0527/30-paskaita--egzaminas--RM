@@ -11,4 +11,32 @@ bent minimalų stilių;
 
 const ENDPOINT = 'cars.json';
 
-document.getElementById("demo").innerHTML = 5 + 6;
+function createBrandCard(brand, models) {
+  const div = document.createElement("div");
+  div.className = "brand-card";
+  const carBrand = document.createElement("h2");
+  carBrand.innerText = brand;
+  div.appendChild(carBrand);
+
+  const list = document.createElement("ul");
+  div.appendChild(list);
+
+  for (let i = 0; i < models.length; i++) {
+    const model = models[i];
+    const modelList = document.createElement("li");
+    modelList.innerText = model;
+    list.appendChild(modelList);
+  }
+  return div;
+}
+const output = document.getElementById("output");
+fetch(ENDPOINT)
+  .then((res) => res.json())
+  .then((brands) => {
+    for (let i = 0; i < brands.length; i++) {
+      const brand = brands[i];
+      const { brand: brandName, models } = brand;
+      const userCard = createBrandCard(brandName, models);
+      output.appendChild(userCard);
+    }
+  });
