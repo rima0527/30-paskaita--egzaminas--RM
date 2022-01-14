@@ -1,3 +1,3 @@
-export default function multiplication(x, y) {
-  return x * y;
+export function multiplication(a, b) {
+  return a * b;
 }

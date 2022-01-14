@@ -1,5 +1,3 @@
-export default function division(x, y) {
-  return x / y;
+export function division(a, b) {
+  return a / b;
 }
-
-
