@@ -9,3 +9,4 @@ document.getElementById("btn__element").onclick=function(){
     count=count+1;
     document.getElementById("btn__state").innerHTML=count
     }
+/* commit 13:42 komentaras*/
